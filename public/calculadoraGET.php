@@ -55,7 +55,7 @@
                             <h2>Calculadora B&aacute;sica</h2>
                             <form name="calculator">
                             <!-- Escribe el resultado como valor de la propiedad value -->
-                                <input type="textfield" name="ans" value="<?php echo "$operando1  $simbolo  $operando2 = $resultado"?>">
+                                <input type="textfield" name="ans" value="<?php echo "$operando1 $simbolo $operando2 = $resultado"?>">
                                 <br>
                                 <input type="button" value="1">
                                 <input type="button" value="2">

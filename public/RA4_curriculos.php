@@ -1,5 +1,5 @@
- <?php
- declare(strict_types=1);
+<?php
+declare(strict_types=1);
 
  require_once __DIR__ . '/../src/RA4_comun.php';
 
@@ -50,4 +50,4 @@
 
    <p><a href="RA4_altaCurriculo.php">Dar de alta un currículo</a></p>
  </body>
- </html>
+ </html> 

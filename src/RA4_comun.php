@@ -43,7 +43,7 @@ declare(strict_types=1);
              'firstName' => 'Elena',
              'lastName'  => 'Ruiz',
              'rol'       => 'docente',
-             'password'  => '$2y$12$iVpEY5uOEtGhbWJo4TUVXepM92W.8JmLDN8uHeD/ByucU4G3U0F/O',
+             'password'  => '$2y$12$F7YayRp8NOaha7YEPxPebuOVUv6T9z38DYsykRZN9M.X13wYtvzvi',
          ],
      ];
  }
@@ -78,3 +78,13 @@ declare(strict_types=1);
 
      return $usuario;
  }
+  function exigirRol(string $rol): array
+ {
+     $usuario = exigirLogin();
+     if ($usuario['rol'] !== $rol) {
+         http_response_code(403);
+         exit('No tienes permiso para ver esta página.');
+     }
+
+     return $usuario;
+ } 
